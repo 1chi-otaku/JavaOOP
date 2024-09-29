@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fff9b687-410c-43c0-90e3-badcf302077c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/async/AsyncDemo.java" afterDir="false" />
+    <list default="true" id="fff9b687-410c-43c0-90e3-badcf302077c" name="Changes" comment="async demo2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/itstep/learning/async/AsyncDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/itstep/learning/async/AsyncDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +79,33 @@
       <option name="presentableId" value="Default" />
       <updated>1727200425873</updated>
       <workItem from="1727200427018" duration="3352000" />
-      <workItem from="1727612883415" duration="1625000" />
+      <workItem from="1727612883415" duration="5802000" />
     </task>
+    <task id="LOCAL-00001" summary="async demo1">
+      <option name="closed" value="true" />
+      <created>1727614673189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727614673189</updated>
+    </task>
+    <task id="LOCAL-00002" summary="async demo2">
+      <option name="closed" value="true" />
+      <created>1727614687562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727614687562</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="async demo1" />
+    <MESSAGE value="async demo2" />
+    <option name="LAST_COMMIT_MESSAGE" value="async demo2" />
   </component>
 </project>

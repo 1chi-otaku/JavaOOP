@@ -15,6 +15,7 @@ public class AsyncDemo {
         System.out.println( "3 - Task demo" );
         System.out.println( "4 - Percent (task) demo" );
         System.out.println( "5 - Digit String option 1" );
+        System.out.println( "6 - Digit String option 2" );
         System.out.println( "0 - Quit" );
 
         Scanner kbScanner = new Scanner( System.in );
@@ -25,6 +26,47 @@ public class AsyncDemo {
             case 3: taskDemo(); break;
             case 4: taskPercentDemo(); break;
             case 5: digitStringDemo(); break;
+            case 6: digitStringMultitask(); break;
+        }
+    }
+
+    private void digitStringMultitask() {
+        startTime = System.currentTimeMillis();
+
+        digitString = new StringBuilder();
+        Future[] tasks = new Future[10];
+        List<String> digits = Arrays.asList("0", "1", "2", "3", "4", "5", "6", "7", "8", "9");
+        Collections.shuffle(digits);
+
+        for( int i = 0; i <= 9; i++ ) {
+            tasks[i] = threadPool.submit( new DigitTask(digits.get(i)) );
+        }
+
+        try {
+            for (int i = 9; i >= 0; i--) {
+                digitString.append(tasks[i].get());
+                System.out.println(  "added : " + digits.get(i) + " : " + digitString);
+            }
+        }
+        catch( Exception ex ) {
+            System.err.println( ex.getMessage() );
+        }
+        stopExecutor();
+    }
+
+    private class DigitTask implements Callable<String> {
+        private final String str;
+
+        public DigitTask(String str) {
+            this.str = str;
+        }
+
+        @Override
+        public String call() throws Exception {
+            System.out.println(
+                    System.currentTimeMillis() - startTime +
+                            " DigitTask " + str + " started" );
+            return str;
         }
     }
 
