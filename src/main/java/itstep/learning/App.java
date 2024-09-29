@@ -1,5 +1,7 @@
 package itstep.learning;
 
+import itstep.learning.async.AsyncDemo;
+
 /**
  * Hello world!
  *
@@ -10,7 +12,9 @@ public class App
     {
         AutoShop shop = new AutoShop();
 
-        shop.run();
+        AsyncDemo asyncDemo = new AsyncDemo();
+
+        asyncDemo.run();
     }
 }
 //test
